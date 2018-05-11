@@ -11,7 +11,7 @@ Provides access to the Camunda REST APIs in order to gather the process instance
         </dependency>
         
 ##Configuration
-Create a camunda-config.json file in your project which includes the following propertu
+Create a camunda-config.json file in your project which includes the following property
 
     {
       "camundaURL": "http://localhost:8080/engine-rest"
