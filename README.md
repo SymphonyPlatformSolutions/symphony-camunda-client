@@ -3,21 +3,21 @@ Library for integration with Camunda REST API for Symphony bots that follow a wo
 
 Provides access to the Camunda REST APIs in order to gather the process instance that belongs a to a user in Symphony Stream and if a user task is present action it.
 
-###Install using maven
+### Install using maven
         <dependency>
                     <groupId>com.symphony.platformsolutions</groupId>
                     <artifactId>symphony-camunda-client</artifactId>
                     <version>1.0.0-SNAPSHOT</version>
         </dependency>
         
-##Configuration
+## Configuration
 Create a camunda-config.json file in your project which includes the following property
 
     {
       "camundaURL": "http://localhost:8080/engine-rest"
     }
     
-##Usage
+## Usage
 
 1. First step is deploying your bpmn files to the camunda engine.
 2. Add this code to your message handler in the Symphony bot code:
