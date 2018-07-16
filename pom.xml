@@ -6,9 +6,11 @@
 
     <groupId>com.symphony.platformsolutions</groupId>
     <artifactId>symphony-camunda-client</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.1</version>
     <name>Symphony Camunda Client</name>
     <url>https://github.com/SymphonyPlatformSolutions/symphony-camunda-client</url>
+    <description>Symphony Camunda Client provided by Symphony Platform Solutions team</description>
+
 
     <licenses>
         <license>
@@ -84,6 +86,20 @@
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.5</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
 
     </build>
@@ -125,6 +141,17 @@
             <artifactId>jersey-media-multipart</artifactId>
             <version>2.26</version>
         </dependency>
+        <dependency>
+            <groupId>com.symphony.platformsolutions</groupId>
+            <artifactId>symphony-api-client-java</artifactId>
+            <version>1.0.2-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.camunda.bpm</groupId>
+            <artifactId>camunda-external-task-client</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
     </dependencies>
 
     <distributionManagement>
