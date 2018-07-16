@@ -7,7 +7,7 @@ Provides access to the Camunda REST APIs in order to gather the process instance
         <dependency>
                     <groupId>com.symphony.platformsolutions</groupId>
                     <artifactId>symphony-camunda-client</artifactId>
-                    <version>1.0.0-SNAPSHOT</version>
+                    <version>1.0.1</version>
         </dependency>
         
 ## Configuration
