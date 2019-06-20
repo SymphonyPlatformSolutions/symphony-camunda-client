@@ -6,11 +6,10 @@
 
     <groupId>com.symphony.platformsolutions</groupId>
     <artifactId>symphony-camunda-client</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <name>Symphony Camunda Client</name>
     <url>https://github.com/SymphonyPlatformSolutions/symphony-camunda-client</url>
     <description>Symphony Camunda Client provided by Symphony Platform Solutions team</description>
-
 
     <licenses>
         <license>
@@ -21,9 +20,9 @@
 
     <developers>
         <developer>
-            <name>Manuela Caicedo</name>
-            <email>manuela.caicedo@symphony.com</email>
-            <organization>Symphony</organization>
+            <name>Symphony Platform Solutions</name>
+            <email>platformsolutions@symphony.com</email>
+            <organization>Symphony Communication Services</organization>
             <organizationUrl>https://symphony.com/</organizationUrl>
         </developer>
     </developers>
@@ -33,11 +32,16 @@
         <url>https://github.com/SymphonyPlatformSolutions/symphony-camunda-client</url>
     </scm>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
@@ -54,6 +58,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
+                <version>3.0.1</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -66,6 +71,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.0.1</version>
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
@@ -108,12 +114,12 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.9.4</version>
+            <version>2.9.9</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>1.7.22</version>
+            <version>1.7.25</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -124,34 +130,28 @@
         <dependency>
             <groupId>org.glassfish.jersey.core</groupId>
             <artifactId>jersey-client</artifactId>
-            <version>2.25.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.jersey</groupId>
-            <artifactId>jersey-client</artifactId>
-            <version>1.19.4</version>
+            <version>2.28</version>
         </dependency>
         <dependency>
             <groupId>org.glassfish.jersey.media</groupId>
             <artifactId>jersey-media-json-jackson</artifactId>
-            <version>2.25.1</version>
+            <version>2.28</version>
         </dependency>
         <dependency>
             <groupId>org.glassfish.jersey.media</groupId>
             <artifactId>jersey-media-multipart</artifactId>
-            <version>2.26</version>
+            <version>2.28</version>
         </dependency>
         <dependency>
             <groupId>com.symphony.platformsolutions</groupId>
             <artifactId>symphony-api-client-java</artifactId>
-            <version>1.0.2-SNAPSHOT</version>
+            <version>1.0.30</version>
         </dependency>
         <dependency>
             <groupId>org.camunda.bpm</groupId>
             <artifactId>camunda-external-task-client</artifactId>
-            <version>1.0.0</version>
+            <version>1.2.0</version>
         </dependency>
-
     </dependencies>
 
     <distributionManagement>
@@ -164,6 +164,4 @@
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
-
-
 </project>
